@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library- Delete Book</title>
+</head>
+<body class="allbody">
+    <nav>
+        <a href="/">Home</a>
+        <a href="/addbook">Add Book</a>
+        <a href="/addauthor">Add Author</a>
+        <a href="/getallbook">Books List</a>
+        <a href="/getallauthor">Author List</a>
+        <a href="/updateauthor">Update Author</a>
+        <a href="/updatebook">Update Book</a>
+    </nav>
+    <h1>Delete A Book</h1>
+    <div class="form">
+        <p>Please enter the ISBN number to delete book</p>
+        <form class="delform" action="/deletebook" method="POST">
+            <label for="isbn">ISBN</label>
+            <input type="text"  name="ISBN" /> </br>
+            <button class="btn" type="submit">Delete Book</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

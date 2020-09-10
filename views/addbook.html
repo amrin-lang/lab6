@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library- Add Book</title>
+</head>
+<body class="allbody">
+    <nav>
+        <a href="/">Home</a>
+        <a href="/addauthor">Add Author</a>
+        <a href="/getallbook">Books List</a>
+        <a href="/getallauthor">Author List</a>
+        <a href="/updateauthor">Update Author</a>
+        <a href="/updatebook">Update Book</a>
+        <a href="/deletebook">Delete Book</a>
+    </nav>
+    <div class='form'>
+        <form action="/addbook" method="post">
+            <label for="name">Title</label> <br>
+                <input type="text" name="title" placeholder="Book Name"/> <br>
+
+                <label for="name">Author ID </label>
+                <input type="text" name="author" placeholder="Author id"/>
+
+                <label for="name">ISBN</label> <br>
+                <input type="text" name="ISBN" value="<%=ISBN%>" /><br>
+
+                <label for="date">Date of Publication</label> <br>
+                <input type="date" name="dop"> <br>
+
+                <label for="summary">Summary</label> <br>
+                <input type="text" name="summary" placeholder="Summary"/>
+                
+        
+                <button type="submit" class="btn"><strong>Add new book</strong></button>
+        </form>
+    </div>
+</body>
+</html>

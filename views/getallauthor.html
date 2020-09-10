@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library-Author List</title>
+</head>
+<body class="listbody">
+    <nav>
+        <a href="/">Home</a>
+        <a href="/addbook">Add Book</a>
+        <a href="/addauthor">Add Author</a>
+        <a href="/getallbook">Books List</a>
+        <a href="/updateauthor">Update Author</a>
+        <a href="/updatebook">Update Book</a>
+        <a href="/deletebook">Delete Book</a>
+    </nav>
+    <div>
+        <h1>List of Author </h1>
+        <table class="libBook">
+            <tr>
+                <th>
+                    No
+                </th>
+                <th>
+                   First Nmae
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Date of Birth
+                </th>
+                <th>
+                    Number of books
+                </th>
+                <th>
+                    State
+                </th>
+                
+                <th>
+                    Suburb
+                </th>
+                <th>
+                    Street
+                </th>
+                <th>
+                    Unit
+                </th>
+                <th>
+                    Author ID
+                </th>
+                
+            </tr>
+    
+            <% for(let i=0;i< bookDB.length;i++){ %>
+            <tr>
+                <td>
+                    <%= (i+1) %>
+                </td>
+                <td>
+                    <%= bookDB[i].name.firstName %>
+                </td>
+                <td>
+                    <%= bookDB[i].name.lastName %>
+                </td>
+                <td>
+                    <%= bookDB[i].dob %>
+                </td>
+                <td>
+                    <%= bookDB[i].numBooks %>
+                </td>
+                <td>
+                    <%= bookDB[i].address.state %>
+                </td>
+                <td>
+                    <%= bookDB[i].address.suburb %>
+                </td>
+                <td>
+                    <%= bookDB[i].address.street %>
+                </td>
+                <td>
+                    <%= bookDB[i].address.unit %>
+                </td>
+                <td>
+                    <%= bookDB[i]._id %>
+                </td>
+                       
+            </tr>
+            <%} %>
+        </table>
+    </div>
+    
+</body>
+</html>

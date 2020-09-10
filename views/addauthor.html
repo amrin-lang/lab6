@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library- Add Author</title>
+</head>
+<body class="allbody">
+    <nav>
+        <a href="/">Home</a>
+        <a href="/addbook">Add Book</a>
+        <a href="/getallbook">Books List</a>
+        <a href="/getallauthor">Author List</a>
+        <a href="/updateauthor">Update Author</a>
+        <a href="/updatebook">Update Book</a>
+        <a href="/deletebook">Delete Book</a>
+    </nav>
+    <div class="form">
+        <form action="/addauthor" method="post">
+            <label for="name">Author First Name</label> <br>
+            <input type="text" name="fname" placeholder="first name"> <br>
+            
+            <label for="name">Author Last Name</label> <br>
+            <input type="text" name="lname" placeholder="last name"><br>
+            
+
+            <label for="date">Date of birth</label> <br>
+            <input type="date" name="dob"/> <br>
+
+            <label for="text">State</label> <br>
+            <input type="text" name="state"/> <br>
+
+            <label for="text">Suburb</label> <br>
+            <input type="text" name="suburb"/> <br>
+
+            <label for="text">Street</label> <br>
+            <input type="text" name="street"/> <br>
+
+            <label for="text">Unit</label> <br>
+            <input type="text" name="unit"/> <br>
+
+            <label for="text">Number of books</label> <br>
+            <input type="text" name="numBooks"/> <br>
+
+            <button type="submit" class="btn"><strong>Add author</strong></button>
+        </form>
+
+    </div>
+</body>
+</html>

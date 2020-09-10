@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library-Book List</title>
+</head>
+<body class="listbody">
+    <nav>
+        <a href="/">Home</a>
+        <a href="/addbook">Add Book</a>
+        <a href="/addauthor">Add Author</a>
+        <a href="/getallauthor">Author List</a>
+        <a href="/updateauthor">Update Author</a>
+        <a href="/updatebook">Update Book</a>
+        <a href="/deletebook">Delete Book</a>
+    </nav>
+    <div>
+        <h1>List of Books </h1>
+        <table class="libBook">
+            <tr>
+                <th>
+                    No.
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Author
+                </th>
+                <th>
+                    ISBN
+                </th>
+                <th>
+                    Date of Publication
+                </th>
+                <th>
+                    Summary
+                </th>
+                
+            </tr>
+    
+            <% for(let i=0;i< bookDB.length;i++){ %>
+            <tr>
+                <td>
+                    <%= (i+1) %>
+                </td>
+                <td>
+                    <%= bookDB[i].title %>
+                </td>
+                <td>
+                    <%= bookDB[i].author.name.firstName %>
+                    <%= bookDB[i].author.name.lastName %>
+                </td>
+                <td>
+                    <%= bookDB[i].ISBN %>
+                </td>
+                <td>
+                    <%= bookDB[i].dop %>
+                </td>
+                <td>
+                    <%= bookDB[i].summary %>
+                </td>
+                    
+            </tr>
+            <%} %>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library-Upload Book </title>
+</head>
+<body class="allbody">
+    <nav>
+        <a href="/">Home</a>
+            <a href="/addbook">Add Book</a>
+            <a href="/addauthor">Add Author</a>
+            <a href="/getallbook">Books List</a>
+            <a href="/getallauthor">Author List</a>
+            <a href="/updateauthor">Update Author</a>
+            <a href="/deletebook">Delete Book</a>
+    </nav>
+    <div class="form">
+        
+        <form  action="/updatebook" method="POST">
+        
+            <h2>Update Book</h2>
+
+            <label for="name">ISBN</label> <br>
+            <input type="text" name="ISBN" placeholder="ISBN" /><br>
+
+            <label for="name">Title</label> <br>
+            <input type="text" name="title" placeholder="Book Name"/> <br>
+
+            <label for="name">Author ID </label><br>
+            <input type="text" name="author" placeholder="Author id"/><br>
+
+            <label for="date">Date of Publication</label> <br>
+            <input type="date" name="dop"> <br>
+
+            <label for="summary">Summary</label> <br>
+            <input type="text" name="summary" placeholder="Summary"/>
+    
+            <button type="submit" class="btn">Update Book<strong></strong></button> 
+            
+        </form>
+    </div>
+</body>
+</html>
